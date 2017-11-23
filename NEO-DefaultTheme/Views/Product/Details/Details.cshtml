@@ -123,7 +123,7 @@
 <div class="ui container" itemscope itemtype="http://schema.org/Product">
     <meta itemprop="description" content="">
     <link itemprop="url" href="" rel="author" />
-    <div class="ui grid stackable produto">
+    <div class="ui grid stackable produto margin25">
         <div class="row product information one column">
             <div class="column">
                 <div class="ui breadcrumb">
@@ -284,12 +284,12 @@
                                 <div class="doubling column row">
                                     <div class="six wide column right aligned">
                                         <div class="ui qtd action mini input">
-                                            <button class="ui icon button qtdminus" id="qtdminus-detalhes">
+                                            <button class="ui icon grey button qtdminus" id="qtdminus-detalhes">
                                                 <i class="minus icon"></i>
                                             </button>
                                             <input type="number" min="1" step="1" size="3" value="1"
                                                    name="quantidade" id="quantidade" />
-                                            <button class="ui green icon button qtdplus" id="qtdplus-detalhes">
+                                            <button class="ui orange icon button qtdplus" id="qtdplus-detalhes">
                                                 <i class="add icon"></i>
                                             </button>
                                         </div>
@@ -402,7 +402,7 @@
                                             <p class="text color grey regular right">@Model.DescriptionAvailabilityStatus</p>
                                         }
 
-                                        <a class="ui animated big green button fluid detalhes btn-comprar  @(Model.FlagExhausted || (Model.HaveSku && SKUPadrao.Stock == 0) || (Model.Stock == 0)  ? "disabled" : "")">
+                                        <a class="ui animated big orange button fluid detalhes btn-comprar  @(Model.FlagExhausted || (Model.HaveSku && SKUPadrao.Stock == 0) || (Model.Stock == 0)  ? "disabled" : "")">
                                             <div class="visible content">Adicionar ao Carrinho</div>
                                             <div class="hidden content">
                                                 <i class="add to cart icon"></i>

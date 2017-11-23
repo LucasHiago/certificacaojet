@@ -8,14 +8,14 @@
 
 
                         <div class="item">
-                            <a href="~/fale-conosco"><i class="call square icon"></i> <span class="text">Fale Conosco</span></a>
+                            <a href="~/minha-conta"><i class="heart icon"></i> <span class="text"> Wishlist </span></a>
                         </div>
                         @if (Session["UserAuthenticated"] == null || (Convert.ToBoolean(Session["Guest"]) == true))
                         {
                             <div class="item">
                                 <a href="/customer">
                                     <i class="user icon regular"></i>
-                                    <span class="text">Central do Cliente</span>
+                                    <span class="text"> Minha conta </span>
                                 </a>
                             </div>
                         }

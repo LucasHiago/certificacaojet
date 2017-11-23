@@ -41,18 +41,18 @@ const { mix } = require('laravel-mix-jet');
  | });
  */
 
-/*mix.browserSync({
-    files: ['assets/css/!*.css', 'assets/js/!*.js', 'Views/!*.cshtml'],
+mix.browserSync({
+    files: ['assets/css/!**!/!*.css', 'assets/js/!**!/!*.js', 'Views/!**!/!*.cshtml'],
     ui: false,
     server: false,
     open: false,
     ghostMode: false,
     injectChanges: true,
     proxy: 'localhost:5001'
-});*/
+});
 
 mix.options({
-    publicPath: './assets/',
+    publicPath: './',
     uglify: {
         compress: true,
         comment: false
@@ -60,10 +60,10 @@ mix.options({
     clearConsole:true
 });
 
-mix.js('resources/js/app.js', 'js')
+mix.js('resources/js/app.js', 'assets/js')
     .sourceMaps()
     .extract(['jquery', 'slick-carousel', 'perfect-scrollbar', 'inputmask', 'sweetalert2', 'easyzoom'])
     .version();
 
-mix.sass('resources/sass/style.scss', 'css')
+mix.sass('resources/sass/style.scss', 'assets/css')
     .sourceMaps();

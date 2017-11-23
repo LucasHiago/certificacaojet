@@ -2,9 +2,50 @@
 	@media screen and (max-width: $mobile-bp){
 		display: none !important;
 	}
+
 }
 .mobile-fluid {
 	@media screen and (max-width: $mobile-bp) {
 		width: 100%;
 	}
 }
+
+
+@media screen and (max-width: $mobile-bp) {
+
+	#top_bar {
+    	display: none !important;
+	}
+
+	.ui.category.search {
+    	display: none;
+	}
+
+	.cartbutton.mini-cart {
+	    bottom: 0;
+	    position: relative;
+	    width: 250px;
+	}
+
+	.ui.centered.grid > .row > .column:not(.aligned):not(.justified){text-align: right;}
+
+	.animated-arrow {right: 150px;top: 8px !important;}
+
+	.ui.fluid.container.car-banners.no-margin.slick-initialized.slick-slider.slick-dotted {
+    	margin-top: 24% !important;
+	}
+
+	.paymentcards.formas-pagamento {
+	    margin-top: 80px;
+	    margin-bottom: 20px;
+	    margin-right: 25%;
+	}
+
+	.ui.dropdown .menu > .header {
+    	display: none;
+	}
+
+}
+
+	
+

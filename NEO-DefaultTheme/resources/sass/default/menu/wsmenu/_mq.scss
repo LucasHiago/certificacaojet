@@ -170,7 +170,7 @@
         }
       }
     .megamenu {
-      background-color: $colormercuryapprox;
+      /*background-color: $colormercuryapprox;*/
       color: $colorstormdustapprox;
       display: none;
       position: relative !important;
@@ -357,26 +357,20 @@
     display: inline-block !important;
     }
   .wsmenu-click {
-    border-left: 1px solid rgba(255, 255, 255, .2);
+    /* border-left: 1px solid rgba(255, 255, 255, 0.2); */
     cursor: pointer;
     display: block;
-    height: 57px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    /* height: 57px; */
+    position: fixed;
+    right: 0px;
+    top: 55px;
     width: 49px;
     z-index: 10;
     i {
       display: block;
-      height: 23px;
-      width: 25px;
-      margin-top: 15px;
-      margin-right: 13px;
-      background-size: 25px;
+      margin: 0 auto;
       font-size: 21px;
-      color: #fff;
-      float: right;
-      text-align: center;
+      color: white;
       }
     }
   .wsmenu-rotate {
@@ -384,8 +378,8 @@
     }
   .animated-arrow {
     position: absolute;
-    left: 0;
-    top: 15px;
+    right: 150px;
+    top: 8px;
     z-index: 102;
     transition: all .4s ease-in-out;
     cursor: pointer;
@@ -394,7 +388,7 @@
       cursor: pointer;
       height: 3px;
       width: 28px;
-      background: $colordesertstormapprox;
+      background: #b3b3b3;
       position: absolute;
       display: block;
       content: '';
@@ -403,7 +397,7 @@
         cursor: pointer;
         height: 3px;
         width: 28px;
-        background: $colordesertstormapprox;
+        background: #b3b3b3;
         position: absolute;
         display: block;
         content: '';
@@ -414,7 +408,7 @@
         cursor: pointer;
         height: 3px;
         width: 28px;
-        background: $colordesertstormapprox;
+        background: #b3b3b3;
         position: absolute;
         display: block;
         content: '';

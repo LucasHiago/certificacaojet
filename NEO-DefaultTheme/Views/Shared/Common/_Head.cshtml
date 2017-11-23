@@ -8,26 +8,37 @@
                              alt="">
                     </a>
                 </div>
-                <div class="ui center aligned five wide tablet eight wide computer column searchcolumn">
+
+                <!-- ~/Views/Shared/Common/_Menu.cshtml -->
+        @Html.Action("Menu", "Home")
+
+        <div class="right menu">
+                </div>
+                <div class="ui right aligned six wide mobile five wide tablet four wide computer column">
+
+
                     <div class="ui category search">
-                        <div class="ui icon input fluid">
-                            <input class="prompt" type="text" placeholder="Buscar...">
-                            <i class="search icon"></i>
+                        <div class="item">
+                            <div class="ui icon input fluid">
+                                <input class="prompt" type="text" placeholder="Buscar...">
+                                <i class="search link icon"></i>
+                            </div>
                         </div>
                         <div class="results"></div>
                     </div>
-                </div>
-                <div class="ui right aligned six wide mobile five wide tablet four wide computer column">
+
+
                     <div class="ui labeled button cartbutton mini-cart no margin bottom" tabindex="0">
                         <div class="ui basic primary button ">
                             <i class="cart icon"></i>
-                            <span>Meu Carrinho</span>
+                            <span></span>
                         </div>
                         <a class="ui left pointing primary label" id="total_itens_card">
                             @Html.Action("TotalItensCart", "Checkout")
                         </a>
                     </div>
                 </div>
+        </div>
             </div>
         </div>
     </div>

@@ -9,6 +9,7 @@
             autoplaySpeed: 2000,
             slidesToScroll: 1,
             arrows: false,
+             fade:true, 
             dots: true,
             accessibility: false,
             slidesToShow: 1
@@ -30,7 +31,7 @@
 <div class="ui images middle aligned center aligned">
     @foreach (var banner in bannerNoRandom)
     {
-        <a href="@banner.Link"><img src="@banner.NameFileImage" class="ui image" alt="@banner.Name" onerror="imgError(this)" /></a>
+        <a href="@banner.Link"><img src="@banner.NameFileImage" class="ui image fullcontrol" alt="@banner.Name" onerror="imgError(this)" /></a>
     }
 </div>
         }

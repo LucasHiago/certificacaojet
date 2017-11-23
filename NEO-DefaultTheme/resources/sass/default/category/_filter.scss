@@ -14,14 +14,12 @@
     .title {
       font-weight: 600;
       font-size: 14px;
-      border-bottom: 1px solid #dededf;
       text-transform: uppercase;
       padding-left: 15px;
-      box-shadow: inset 5px 0 0 rgb(44, 62, 80);
+      box-shadow: inset 5px 0 0 $verde-2ck-claro;
       margin-bottom: 10px;
       &.active {
-        border-bottom: 0px solid #dededf;
-        background-color: rgb(44, 62, 80) !important;
+        background-color: $verde-2ck-claro !important;
         color: #ffffff;
       }
       .icon {

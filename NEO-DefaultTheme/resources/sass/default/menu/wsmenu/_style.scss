@@ -6,7 +6,7 @@
     margin: 0 auto;
     padding: 0;
     position: relative;
-    width: 100%;
+    width: auto;
 
     * {
         box-sizing: border-box;
@@ -15,10 +15,12 @@
 }
 
 .wsmain {
-    margin: 0 auto;
-    max-width: 1127px;
-    padding: 0;
-    width: 100%;
+    
+    margin: auto;
+    position: relative;
+    right: 5em;
+    top: 1em;
+    width: auto;
 
     html,
     body,
@@ -33,6 +35,10 @@
         margin: 0;
         padding: 0;
         vertical-align: baseline;
+    }
+
+    h4 a{ 
+        color: white; 
     }
 
     .cl {
@@ -70,7 +76,7 @@
 
 .topmenusearch {
     float: right;
-    height: 42px;
+    height: 41px;
     margin: 9px 0 0;
     position: relative;
     width: 100%;
@@ -295,20 +301,18 @@
 }
 
 .megamenu {
-    background-color: $white;
-    border: solid 1px $colorgalleryapprox;
-    color: $black;
+    background-color: $verde-2ck-claro;
+    color: white;
     font-size: 15px;
+    border-radius: 0em;
     left: 0;
     margin: 0;
     opacity: 0;
-    padding: 14px;
+    padding: 0px 0em 1em 1em;
     position: absolute;
     text-align: left;
-    //top: 60px;
-    width: 100%;
+    width: auto;
     z-index: 1200;
-    box-shadow: inset 0 5px 0 $menuHoverBorderColor;
     border-top: 0px;
 }
 
@@ -374,5 +378,12 @@
 .wsmenu-click, .wsmenu-click02 {
     display: none;
 }
+
+.ui.container.fluid._header {
+    z-index: 10;
+    position: fixed;
+}
+
+a.item::before{content:none !important;}
 
 @import "mq";

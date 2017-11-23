@@ -5,7 +5,7 @@
     {
         foreach (var group in Model)
         {
-            <div class="ui horizontal divider">
+            <div class="ui horizontal aligned center header">
                 <a href="@group.UrlFriendly">@group.Name</a>
             </div>
             @Html.Action("ProductsByGroup", "Product", new { id = group.IdGroup })

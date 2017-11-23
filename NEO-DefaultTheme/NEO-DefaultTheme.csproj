@@ -419,6 +419,8 @@
     <Content Include="Views\ErrorPages\403.cshtml" />
     <Content Include="Views\ErrorPages\404.cshtml" />
     <Content Include="Views\ErrorPages\500.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Product\Conjunct\Details.cshtml" />
     <Content Include="Views\Product\Conjunct\_ProductConjunctList.cshtml" />
     <Content Include="Views\Shared\Blocks\Atributes\_AtributesFilters.cshtml" />

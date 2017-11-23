@@ -46,3 +46,8 @@ headlogo {
   }
 
 }
+
+
+.pushable {
+  > .pusher{min-height: auto !important;}
+}

@@ -29,7 +29,7 @@
                 }
             </a>
         }
-        <div class="ui horizontal divider avaliacao">
+        <div class="ui horizontal avaliacao aligned center">
             <div class="ui tiny star rating" data-rating="@Model.Rate.Value"></div>
         </div>
         <div class="info">
@@ -47,9 +47,6 @@
                             <i class="dropdown icon"></i>
                             <span class="text">@reference.Name</span>
                             <div class="menu">
-                                <div class="header">
-                                    @reference.Name
-                                </div>
                                 <div class="scrolling menu">
                                     @foreach (var variation in reference.Variations)
                                     {
@@ -70,7 +67,7 @@
                 <!-- Verificar se o produto é conjunto -->
                 @if(Model.HasConjunct)
                 {
-                    <a href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)" class="ui labeled icon button green fluid btn-comprar" data-idproduct="@Model.IdProduct" data-name="Model.Name">
+                    <a href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)" class="ui labeled icon button orange fluid btn-comprar" data-idproduct="@Model.IdProduct" data-name="Model.Name">
                         <i id="btn-icon-card-Model.IdProduct" class="icon announcement"></i>
                         Comprar
                     </a>
@@ -84,7 +81,7 @@
                 }
                 else
                 {
-                    <a id="btn-comprar-card-@Model.IdProduct" class="ui labeled icon button green fluid btn-comprar-card" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
+                    <a id="btn-comprar-card-@Model.IdProduct" class="ui labeled icon button orange fluid btn-comprar-card" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
                         <i id="btn-icon-card-@Model.IdProduct" class="icon add to cart"></i>
                         Comprar
                     </a>
@@ -123,7 +120,7 @@
                         <i class="icon unhide"></i>
                     </a>
                 *@
-                <a class="ui basic button right floated primary right floated mobile-fluid" href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)">
+                <a class="ui basic button right fluid primary right fluid mobile-fluid" href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)">
                     <i class="icon search"></i>DETALHES
                 </a>
             </div>

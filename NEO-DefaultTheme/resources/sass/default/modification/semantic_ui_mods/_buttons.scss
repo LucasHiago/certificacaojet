@@ -2,12 +2,12 @@
 
   &.primary {
 
-    box-shadow: 0 0 0 1px $primary-color inset !important;
-    color: $primary-color !important;
+    box-shadow: 0 0 0 1px $contraste inset !important;
+    color: $contraste !important;
 
     &:hover {
-      background-color: $primary-color !important;
-      box-shadow: 0 0 0 1px $primary-color inset !important;
+      background-color: $contraste !important;
+      box-shadow: 0 0 0 1px $contraste inset !important;
       box-shadow: none !important;
       color: white !important;
     }

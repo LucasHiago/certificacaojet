@@ -2,6 +2,10 @@
 
   &.search{
 
+    input.prompt{
+      border-radius: 3px !important;
+    }
+
     > .results{
       .result
       {
@@ -42,11 +46,20 @@
   &.category {
 
     &.search {
+      
+      width: 78%;
+      right: 3em;
+      top: 1.5em;
+      position: relative;
 
       .results {
-        width: 39.5em !important;
+        width: auto !important;
         z-index: 9;
       }
     }
+  }
+
+  .menu{
+    font-size: .9rem !important;
   }
 }

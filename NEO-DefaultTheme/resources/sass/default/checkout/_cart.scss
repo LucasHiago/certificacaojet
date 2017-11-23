@@ -239,3 +239,12 @@
     font-size: 0.95em;
   }
 }
+
+.cartbutton{
+  &.mini-cart{
+
+    bottom: 1.2em;
+    position: relative;
+
+  }
+}
